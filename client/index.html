@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanthasamy Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Portfolio</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <img
+            src="images/Kanthasamy.jpg"
+            alt="Profile Photo"
+            class="profile-pic"
+        >
+
+        <h1>Kanthasamy K N</h1>
+
+        <h2 id="typing"></h2>
+
+        <p>
+            Full Stack Developer specializing in
+            Java, Node.js, Express.js and MySQL.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="Kanthasamy K N.pdf"
+               download
+               class="btn">
+                Download Resume
+            </a>
+
+            <a
+            href="https://github.com/YOUR_GITHUB_USERNAME"
+            target="_blank"
+            class="btn">
+            GitHub
+            </a>
+
+            <a
+            href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BAZHhV%2BvKT1C9qbaqjtnDgA%3D%3D"
+            target="_blank"
+            class="btn">
+            LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Full Stack Developer and Information Technology student passionate about creating efficient, responsive, and user-centric web applications. With a strong foundation in Java, JavaScript, Node.js, Express.js, and MySQL, I enjoy solving complex problems and transforming ideas into functional digital solutions. I am constantly expanding my technical knowledge, building real-world projects, and striving to develop software that delivers meaningful impact.
+
+    </p>
+
+</section>
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skill-grid">
+
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Node.js</div>
+        <div class="card">Express.js</div>
+        <div class="card">MySQL</div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div id="projectContainer">
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Message"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
