@@ -26,7 +26,7 @@ function loadProjects()
 {
     const projects = [
     {
-        title: "Personal Portfolio Website",
+        title: "Personal Portfolio website",
         description: "A responsive portfolio website showcasing my skills, projects and contact information.",
         technologies: "HTML, CSS, JavaScript, Node.js, Express.js, MySQL",
         github_link: "https://github.com/Kans23-cloud/Personal_Portfolio",
