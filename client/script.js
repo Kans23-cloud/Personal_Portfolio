@@ -22,36 +22,30 @@ setInterval(() => {
 
 loadProjects();
 
-async function loadProjects()
+function loadProjects()
 {
-    const response =
-    await fetch(
-    "http://localhost:5000/api/projects"
-    );
-
-    const projects =
-    await response.json();
+    const projects = [
+    {
+        title: "Personal Portfolio Website",
+        description: "A responsive portfolio website showcasing my skills, projects and contact information.",
+        technologies: "HTML, CSS, JavaScript, Node.js, Express.js, MySQL",
+        github_link: "https://github.com/Kans23-cloud/Personal_Portfolio",
+        live_link: "https://portfolio-kans.vercel.app"
+    },
+    ];
 
     const container =
-    document.getElementById(
-    "projectContainer"
-    );
+    document.getElementById("projectContainer");
 
     container.innerHTML = "";
 
     projects.forEach(project =>
     {
-        container.innerHTML +=
-        `
+        container.innerHTML += `
         <div class="project-card">
+            <h3>${project.title}</h3>
 
-            <h3>
-                ${project.title}
-            </h3>
-
-            <p>
-                ${project.description}
-            </p>
+            <p>${project.description}</p>
 
             <p>
                 <strong>Tech:</strong>
@@ -59,25 +53,20 @@ async function loadProjects()
             </p>
 
             <div class="links">
-
-                <a
-                href="${project.github_link}"
-                target="_blank">
-                GitHub
+                <a href="${project.github_link}" target="_blank">
+                    GitHub
                 </a>
 
-                <a
-                href="${project.live_link}"
-                target="_blank">
-                Live Demo
+                <a href="${project.live_link}" target="_blank">
+                    Live Demo
                 </a>
-
             </div>
-
         </div>
         `;
     });
 }
+
+loadProjects();
 
 document
 .getElementById("contactForm")
